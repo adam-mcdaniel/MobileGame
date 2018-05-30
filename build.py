@@ -1,0 +1,6 @@
+import os, sys
+print(
+"""p4a apk --presplash {}/presplash.png --icon {}/icon.png --android_api 19 --requirements=kivy --orientation landscape --private {} --package=net.kiwi.net --name="{}" --version=1.0 --bootstrap=sdl2""".format(os.path.dirname(os.path.abspath(sys.argv[0])), os.path.dirname(os.path.abspath(sys.argv[0])), os.path.dirname(os.path.abspath(sys.argv[0])), sys.argv[1])
+)
+# os.system("""p4a apk --presplash {}/presplash.png --presplash-color "#CC5151" --icon {}/icon.png --android_api 19 --requirements=kivy --orientation landscape --private {} --package=net.kiwi.net --name="{}" --version=1.0 --bootstrap=sdl2""".format(os.path.dirname(os.path.abspath(sys.argv[0])), os.path.dirname(os.path.abspath(sys.argv[0])), os.path.dirname(os.path.abspath(sys.argv[0])), sys.argv[1]))
+os.system("""p4a apk --presplash {}/presplash.png --icon {}/icon.png --android_api 19 --requirements=kivy --orientation landscape --private {} --package=net.kiwi.net --name="{}" --version=1.0 --bootstrap=sdl2""".format(os.path.dirname(os.path.abspath(sys.argv[0])), os.path.dirname(os.path.abspath(sys.argv[0])), os.path.dirname(os.path.abspath(sys.argv[0])), sys.argv[1]))
